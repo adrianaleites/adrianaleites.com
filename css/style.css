@@ -2,16 +2,85 @@
  * Fonts
 ============================================================================= */
 
+/* Archia
+--------------------------------------------- */
+
+@font-face {
+  font-family: 'Archia';
+  font-style: normal;
+  font-display: swap;
+  font-weight: 400;
+  src: local(''),
+       url('../fonts/archia/archia-regular-webfont.woff2') format('woff2'),
+       url('../fonts/archia/archia-regular-webfont.woff') format('woff');
+}
+
+@font-face {
+  font-family: 'Archia';
+  font-style: normal;
+  font-display: swap;
+  font-weight: 500;
+  src: local(''),
+       url('../fonts/archia/archia-medium-webfont.woff2') format('woff2'),
+       url('../fonts/archia/archia-medium-webfont.woff') format('woff');
+}
+
+@font-face {
+  font-family: 'Archia';
+  font-style: normal;
+  font-display: swap;
+  font-weight: 700;
+  src: local(''),
+       url('../fonts/archia/archia-bold-webfont.woff2') format('woff2'),
+       url('../fonts/archia/archia-bold-webfont.woff') format('woff');
+}
+
+/* Silka
+--------------------------------------------- */
+
+@font-face {
+  font-family: 'Silka';
+  font-style: normal;
+  font-display: swap;
+  font-weight: 400;
+  src: local(''),
+       url('../fonts/archia/silka-regular-webfont.woff2') format('woff2'),
+       url('../fonts/archia/silka-regular-webfont.woff') format('woff');
+}
+
+@font-face {
+  font-family: 'Silka';
+  font-style: normal;
+  font-display: swap;
+  font-weight: 500;
+  src: local(''),
+       url('../fonts/archia/silka-medium-webfont.woff2') format('woff2'),
+       url('../fonts/archia/silka-medium-webfont.woff') format('woff');
+}
+
+@font-face {
+  font-family: 'Silka';
+  font-style: normal;
+  font-display: swap;
+  font-weight: 600;
+  src: local(''),
+       url('../fonts/archia/silka-semibold-webfont.woff2') format('woff2'),
+       url('../fonts/archia/silka-semibold-webfont.woff') format('woff');
+}
 
 /* ==========================================================================
  * Variables
 ============================================================================= */
 
 :root {
-	/* Colors */
+  /* Colors */
   --dark-color: #1A1A1A;
-	--light-color: #F2EFE8;
-	--accent-color: #8C6DB5;
+  --light-color: #F2EFE8;
+  --accent-color: #8C6DB5;
+
+  /* Fonts */
+  --main-font: 'Archia', 'Courier New', Courier, monospace;
+  --secondary-font: 'Silka', Arial, Helvetica, sans-serif;
 }
 
 /* ==========================================================================
@@ -19,12 +88,21 @@
 ============================================================================= */
 
 body {
-	-moz-osx-font-smoothing: grayscale;
-	-webkit-font-smoothing: antialiased;
-	background-color: var(--dark-color);
-	color: var(--light-color);
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+  background-color: var(--dark-color);
+  color: var(--light-color);
+  font-family: var(--secondary-font);
 }
 
 a {
-	color: var(--light-color);
+  color: var(--light-color);
+}
+
+/* ==========================================================================
+ * Intro section
+============================================================================= */
+
+.intro p {
+  font-family: var(--main-font);
 }
