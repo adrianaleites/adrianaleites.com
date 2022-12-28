@@ -178,6 +178,11 @@ main {
   margin: 0;
 }
 
+.intro .section-title .emoji {
+  position: relative;
+  top: -0.2em;
+}
+
 /* ==========================================================================
  * Responsive styles
 ============================================================================= */
@@ -191,7 +196,7 @@ main {
   }
 }
 
-/* For Phone Only */
+/* For Small Phone Only */
 @media (max-width: 499px) {
   :root {
     /* Font Sizes */
@@ -225,6 +230,10 @@ main {
     /* Layout */
     --outer-margin: 24px;
     --logo-width: 48px;
+  }
+
+  .intro .section-title .emoji {
+    top: -0.1em;
   }
 }
 
